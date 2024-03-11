@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "645298253009",
+    "project_id": "recapp-d4d30",
+    "storage_bucket": "recapp-d4d30.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:645298253009:android:e015d402bf97c7d19ba9f0",
+        "android_client_info": {
+          "package_name": "com.example.recapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVrP7kdBJu76Pr2RRAqnXogFzwfquXDmc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
