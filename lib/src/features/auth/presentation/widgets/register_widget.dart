@@ -1,13 +1,13 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:recapp/src/core/auth.dart' as a;
 import 'package:recapp/src/core/context_extension.dart';
 import 'package:recapp/src/core/popups.dart';
 import 'package:recapp/src/core/snackbar.dart';
 import 'package:recapp/src/features/auth/domain/models/user_model.dart';
 import 'package:recapp/src/features/home/presentation/screens/home_screen.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:vibration/vibration.dart';
 
 class RegisterWidget extends StatefulWidget {
@@ -43,7 +43,7 @@ class _RegisterWidgetState extends State<RegisterWidget> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    'Became a part of the future',
+                    'Become a part of the future',
                     style: GoogleFonts.poppins(
                       color: Colors.black,
                       fontWeight: FontWeight.bold,

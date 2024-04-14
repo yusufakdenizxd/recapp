@@ -13,6 +13,7 @@ class App extends StatelessWidget {
     return ProviderScope(
       child: MaterialApp(
         navigatorKey: navigatorKey,
+        //Tema renklerinin ayarlanması
         theme: ThemeData.from(
           colorScheme: ColorScheme.fromSeed(
             seedColor: const Color(0xFF4d8d6e),
@@ -23,11 +24,14 @@ class App extends StatelessWidget {
         ),
         debugShowCheckedModeBanner: false,
         home: StreamBuilder(
+          //Kullanıcı Giriş Durumlarının Kontrolü
           stream: FirebaseAuth.instance.authStateChanges(),
           builder: (context, snapshot) {
             if (snapshot.data != null) {
+              //Kullanıcı null değilse ana ekran
               return const HomeScreen();
             }
+            //Kullanıcı null ise giriş ekranı
             return const WelcomeScreen();
           },
         ),

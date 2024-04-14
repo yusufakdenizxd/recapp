@@ -1,15 +1,18 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:recapp/src/core/auth.dart';
 import 'package:recapp/src/core/context_extension.dart';
+import 'package:recapp/src/core/popups.dart';
 import 'package:recapp/src/core/string_picker.dart';
 import 'package:recapp/src/features/about_us/presentation/screens/about_us_screen.dart';
+import 'package:recapp/src/features/auth/presentation/screens/auth_screen.dart';
 import 'package:recapp/src/features/coupons/presentation/screens/coupons_screen.dart';
 import 'package:recapp/src/features/gallery/presentation/screens/gallery_screen.dart';
 import 'package:recapp/src/features/profile/presentation/screens/profile_screen.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:vibration/vibration.dart';
 
 class DrawerWidget extends ConsumerWidget {
@@ -248,7 +251,18 @@ class DrawerWidget extends ConsumerWidget {
           // ),
 
           InkWell(
-            onTap: () {},
+            onTap: () async {
+              final res = await Popup.showPopUpYesNo('Are you sure you want to logout');
+              if (!res) {
+                Vibration.vibrate();
+                return;
+              }
+              user = null;
+              await FirebaseAuth.instance.signOut();
+              context.pushReplacement(const AuthScreen());
+
+              //TODO LOG OUT LOGIC
+            },
             child: Container(
               height: size.height * .09,
               color: const Color(0xFFF7ECEC),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:recapp/src/core/context_extension.dart';
 import 'package:recapp/src/features/auth/presentation/screens/auth_screen.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
@@ -24,6 +24,7 @@ class WelcomeScreen extends StatelessWidget {
               SizedBox(
                 height: size.height * .5,
               ),
+              //Get Started Butonu ve basıldığında kendi sayfasına yönlendirmesi
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: GestureDetector(
@@ -49,6 +50,7 @@ class WelcomeScreen extends StatelessWidget {
                   ),
                 ),
               ),
+              //Login Butonu ve basıldığında kendi sayfasına yönlendirmesi
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: GestureDetector(
@@ -80,6 +82,7 @@ class WelcomeScreen extends StatelessWidget {
               )
             ],
           ),
+          //Üstteki fotoğrafın widgetı
           Positioned(
             top: -size.height * .15,
             left: -size.width * .1,
