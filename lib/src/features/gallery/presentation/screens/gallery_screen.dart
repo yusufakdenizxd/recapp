@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:recapp/src/core/context_extension.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:recapp/src/core/context_extension.dart';
 
 class GalleryScreen extends StatelessWidget {
   const GalleryScreen({super.key});
@@ -82,7 +82,7 @@ class GalleryScreen extends StatelessWidget {
                       top: 12,
                     ),
                     child: Text(
-                      'Lorem ipsum dolor sit amet',
+                      'Mission:',
                       style: GoogleFonts.roboto(
                         color: const Color(0xFF292929),
                         fontWeight: FontWeight.bold,
@@ -95,7 +95,7 @@ class GalleryScreen extends StatelessWidget {
                       top: 12.0,
                     ),
                     child: Text(
-                      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dictum molestie gravida. Maecenas luctus auctor erat, ut accumsan nisl rutrum a. Aliquam leo dolor, convallis euismod mi a, dapibus malesuada dolor. Nam aliquet augue non metus elementum, ut eleifend neque sagittis. Morbi sodales felis massa. Fusce et consectetur nulla. Proin rutrum non quam ac efficitur. Aenean a ligula at odio eleifend sagittis fringilla imperdiet erat. Donec et vestibulum quam. Donec euismod ante eros, ut vulputate nunc tincidunt vel. Nulla facilisi.',
+                      'Our mission at Recapp is to empower individuals to make a meaningful impact on the environment by promoting recycling and sustainable practices. We strive to provide a user-friendly platform that incentivizes and rewards users for their contributions to recycling efforts. Through education, innovation, and collaboration, we aim to create a cleaner, healthier planet for current and future generations.',
                       style: GoogleFonts.roboto(
                         color: const Color(0xFF747474),
                         fontSize: 20,
@@ -134,7 +134,7 @@ class GalleryScreen extends StatelessWidget {
                       top: 12,
                     ),
                     child: Text(
-                      'Lorem ipsum dolor sit amet',
+                      'Vision:',
                       style: GoogleFonts.roboto(
                         color: const Color(0xFF292929),
                         fontWeight: FontWeight.bold,
@@ -147,7 +147,7 @@ class GalleryScreen extends StatelessWidget {
                       top: 12.0,
                     ),
                     child: Text(
-                      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dictum molestie gravida. Maecenas luctus auctor erat, ut accumsan nisl rutrum a. Aliquam leo dolor, convallis euismod mi a, dapibus malesuada dolor. Nam aliquet augue non metus elementum, ut eleifend neque sagittis. Morbi sodales felis massa. Fusce et consectetur nulla. Proin rutrum non quam ac efficitur. Aenean a ligula at odio eleifend sagittis fringilla imperdiet erat. Donec et vestibulum quam. Donec euismod ante eros, ut vulputate nunc tincidunt vel. Nulla facilisi.',
+                      'At Recapp, we envision a world where recycling is not only a habit but a celebrated act of environmental stewardship. We aspire to build a global community of eco-conscious individuals who are inspired and motivated to participate in recycling initiatives. By harnessing the power of technology and gamification, we seek to revolutionize the way people engage with recycling, making it accessible, enjoyable, and rewarding for all. Together, we can transform waste into valuable resources and pave the way towards a sustainable future.',
                       style: GoogleFonts.roboto(
                         color: const Color(0xFF747474),
                         fontSize: 20,

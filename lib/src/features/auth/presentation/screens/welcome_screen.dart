@@ -28,7 +28,8 @@ class WelcomeScreen extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: GestureDetector(
-                  onTap: () => context.pushReplacement(const AuthScreen(initialIndex: 1)),
+                  onTap: () => context
+                      .pushReplacement(const AuthScreen(initialIndex: 1)),
                   child: Container(
                     width: size.width * .7,
                     height: size.height * .07,
@@ -54,7 +55,8 @@ class WelcomeScreen extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: GestureDetector(
-                  onTap: () => context.pushReplacement(const AuthScreen(initialIndex: 0)),
+                  onTap: () => context
+                      .pushReplacement(const AuthScreen(initialIndex: 0)),
                   child: Container(
                     width: size.width * .7,
                     height: size.height * .07,

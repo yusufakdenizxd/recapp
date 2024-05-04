@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:recapp/src/core/context_extension.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:recapp/src/core/context_extension.dart';
 
 class AboutUsScreen extends StatelessWidget {
   const AboutUsScreen({super.key});
@@ -93,7 +93,7 @@ class AboutUsScreen extends StatelessWidget {
                         left: 12,
                       ),
                       child: Text(
-                        '+90 (536) 836 02 23',
+                        '+90 (224) 715 10 10',
                         textAlign: TextAlign.center,
                         style: GoogleFonts.roboto(
                           color: const Color(0xFF292929),
@@ -116,7 +116,7 @@ class AboutUsScreen extends StatelessWidget {
                         left: 12,
                       ),
                       child: Text(
-                        'yusufakdnz910@gmail.com',
+                        'recapp@gmail.com',
                         textAlign: TextAlign.center,
                         style: GoogleFonts.roboto(
                           color: const Color(0xFF292929),
@@ -159,7 +159,7 @@ class AboutUsScreen extends StatelessWidget {
                     top: 12,
                   ),
                   child: Text(
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                    'Kemalpaşa, Adnan Menderes Blv. No:1, 16400 İnegöl/Bursa',
                     textAlign: TextAlign.center,
                     style: GoogleFonts.roboto(
                       color: const Color(0xFF292929),
